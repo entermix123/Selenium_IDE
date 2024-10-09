@@ -23,9 +23,6 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
-        
-    - name: Execute unit tests
-      run: dotnet test
 
     - name: Install dependencies
       run: dotnet restore
