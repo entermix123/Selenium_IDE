@@ -14,14 +14,13 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
       
-    # Install the .NET Core workload
     - name: Install .NET Core
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
 
     - name: Install Chrome
-      run: 
+      run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
         
